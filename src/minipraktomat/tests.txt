@@ -1,0 +1,127 @@
+praktomat> tut florian
+praktomat> stud bernd 23442
+praktomat> stud andrea 12345
+praktomat> stud hans 32000
+praktomat> tut martin
+praktomat> stud tina 66666
+praktomat> stud tina 43222
+praktomat> stud georg 12345
+Error! duplicate id
+praktomat> task abschluss
+task id(1)
+praktomat> task zusatzaufgabe
+task id(2)
+praktomat> list-students
+(12345,andrea): florian
+(23442,bernd): florian
+(32000,hans): florian
+(43222,tina): martin
+(66666,tina): martin
+praktomat> review 1 66666 2 ganz_gut
+Error! (66666,tina) has no solution to correct
+praktomat> submit 1 66666 die_loesung_ist_42
+praktomat> review 1 66666 2 ganz_gut
+martin reviewed (66666,tina) with grade 2
+praktomat> submit 1 23442 glaub_es_ist_43
+praktomat> submit 1 32000 keine_ahnung
+praktomat> list-solutions 1
+(23442,bernd): glaub_es_ist_43
+(32000,hans): keine_ahnung
+(66666,tina): die_loesung_ist_42
+praktomat> review 1 32000 5 das_war_wohl_nix
+florian reviewed (32000,hans) with grade 5
+praktomat> results
+task id(1): abschluss
+32000: 5
+66666: 2
+task id(2): zusatzaufgabe
+praktomat> summary task
+Error! command not found
+praktomat> summary-task
+task id(1): abschluss
+submitted: 3
+reviewed: 2
+average grade: 3.50
+distribution: 0x1, 1x2, 0x3, 0x4, 1x5
+task id(2): zusatzaufgabe
+submitted: 0
+reviewed: 0
+average grade: -
+distribution: 0x1, 0x2, 0x3, 0x4, 0x5
+praktomat> summary-tutor
+florian: 3 students, 1 missing review(s), average grade 5.00
+martin: 2 students, 0 missing review(s), average grade 2.00
+praktomat> summary-student
+(66666,tina): 2.00
+(32000,hans): 5.00
+(12345,andrea): -
+(23442,bernd): -
+(43222,tina): -
+praktomat> review 1 23442 3 glaub_das_ist_richtig
+florian reviewed (23442,bernd) with grade 3
+praktomat> stud lea 77777
+praktomat> tut florian
+praktomat> stud lea 77776
+praktomat> list-students
+(12345,andrea): florian
+(23442,bernd): florian
+(32000,hans): florian
+(43222,tina): martin
+(66666,tina): martin
+(77776,lea): florian
+(77777,lea): martin
+praktomat> summary-student
+(66666,tina): 2.00
+(23442,bernd): 3.00
+(32000,hans): 5.00
+(12345,andrea): -
+(43222,tina): -
+(77776,lea): -
+(77777,lea): -
+praktomat> submit 2 66666 dies_ist_eine_zusatzloesung
+praktomat> submit 2 77777 blah
+praktomat> submit 1 77777 bluh
+praktomat> submit 1 43222 42
+praktomat> submit 2 43222 mag_ich_nicht_machen
+praktomat> review 2 77777 4 meh
+martin reviewed (77777,lea) with grade 4
+praktomat> review 1 77777 3 naja
+martin reviewed (77777,lea) with grade 3
+praktomat> review 1 43222 1 wunderbar!
+martin reviewed (43222,tina) with grade 1
+praktomat> review 2 432222 2 ist_schon_ok
+Error! student does not exist
+praktomat> review 2 43222 2 ist_schon_ok
+martin reviewed (43222,tina) with grade 2
+praktomat> review 2 66666 2 gut
+martin reviewed (66666,tina) with grade 2
+praktomat> review 1 66666 sehr_gut
+Error! invalid number of arguments. Expected: 4
+praktomat> review 1 23442 1 super
+florian reviewed (23442,bernd) with grade 1
+praktomat> review 1 66666 1 sehr_gut
+martin reviewed (66666,tina) with grade 1
+praktomat> summary-student
+(23442,bernd): 1.00
+(43222,tina): 1.50
+(66666,tina): 1.50
+(77777,lea): 3.50
+(32000,hans): 5.00
+(12345,andrea): -
+(77776,lea): -
+praktomat> summary-task
+task id(1): abschluss
+submitted: 5
+reviewed: 5
+average grade: 2.20
+distribution: 3x1, 0x2, 1x3, 0x4, 1x5
+task id(2): zusatzaufgabe
+submitted: 3
+reviewed: 3
+average grade: 2.67
+distribution: 0x1, 2x2, 0x3, 1x4, 0x5
+praktomat> reset
+praktomat> results
+praktomat> nothing
+Error! command not found
+praktomat> quit

@@ -1,0 +1,82 @@
+newGame 8 8 WW-B----,WWB-----,WWB-B-BW,WWBBBBBB,WWBWBWB-,WWWWWBBB,BWWBBWWW,WWWWWWWW
+move H2
+move H5
+print
+move H1
+move E2
+move D2
+print
+move G2
+move F3
+move D3
+move F2
+print
+move G1
+move F1
+move C1
+move E1
+newGame 8 8
+hole C3:C6
+hole F3:F6
+print
+possibleMoves
+move D3
+hole A7:A7
+abort
+newGame 4 6
+print
+move C5
+move B5
+move A5
+move D3
+print
+abort
+newGame 8 8
+move D6
+move E6
+print
+newGame 6 6
+possibleMoves
+move D6
+abort
+move A1
+newGame 8 8 WW-B--##,WWB----#,WWB-B-BW,WWBBBBBB,WWBWBWB-,WWWWWBBB,BWWBBWWW,WWWWWWWW
+print
+hole D2:D2
+print
+possibleMoves
+abort
+newGame 10 10
+print
+hole D2:D2
+hole D:D
+hole :
+hole D2:D222
+hole D2:D-3
+hole B2:A1
+abort
+newGame 30 100
+newGame a b
+newGame -5 -10
+print
+newGame 8 8
+move F5
+move D6
+move C5
+print
+possibleMoves
+move F4
+print
+possibleMoves
+move F3
+print
+possibleMoves
+print
+abort
+newGame 6 6 WWWWWW,BWBWBW,WWWWWW,BW-#WB,WWWWW-,BWBWBW
+print
+possibleMoves
+move C4
+print
+move F5
+quit

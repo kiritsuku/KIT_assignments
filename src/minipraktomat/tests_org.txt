@@ -1,0 +1,46 @@
+tut florian
+stud bernd 23442
+stud andrea 12345
+stud hans 32000
+tut martin
+stud tina 66666
+stud tina 43222
+stud georg 12345
+task Abschlussaufgabe_Praktomatmodell
+task Dies_ist_eine_Zusatzaufgabe
+list-students
+review 1 66666 2 Ganz_gut_geloest,_weiter_so!
+submit 1 66666 Die_Loesung_ist_42
+review 1 66666 2 Ganz_gut_geloest,_weiter_so!
+submit 1 23442 Glaub_es_ist_42
+submit 1 32000 Keine_Ahnung
+list-solutions 1
+review 1 32000 5 Das_war_wohl_nix.
+results
+summary-task
+summary-tutor
+summary-student
+review 1 23442 3 Glaub_das_ist_richtig.
+stud lea 77777
+tut florian
+stud lea 77776
+list-students
+summary-student
+submit 2 66666 Dies_ist_eine_Zusatzloesung
+submit 2 77777 Blah
+submit 1 77777 Bluh
+submit 1 43222 42
+submit 2 43222 Mag_ich_nicht_machen.
+review 2 77777 4 Meh!
+review 1 77777 3 Naja
+review 1 43222 1 Wunderbar
+review 2 43222 2 Ist_schon_ok.
+review 2 66666 2 Gut.
+review 1 66666 1 Sehr_gut.
+review 1 23442 1 Super.
+summary-student
+summary-task
+reset
+results
+this is not a command
+quit

@@ -1,0 +1,272 @@
+othello> newGame 8 8 WW-B----,WWB-----,WWB-B-BW,WWBBBBBB,WWBWBWB-,WWWWWBBB,BWWBBWWW,WWWWWWWW
+othello> move H2
+othello> move H5
+black passes.
+othello> print
+WW-B----
+WWB----B
+WWB-B-BB
+WWBBBBBB
+WWBWBWWW
+WWWWWBWW
+BWWBBWWW
+WWWWWWWW
+turn: white
+othello> move H1
+black passes.
+othello> move E2
+othello> move D2
+othello> print
+WW-B---W
+WWBBW--W
+WWB-B-BW
+WWBBWBBW
+WWBWWWWW
+WWWWWBWW
+BWWBBWWW
+WWWWWWWW
+turn: white
+othello> move G2
+othello> move F3
+othello> move D3
+othello> move F2
+othello> print
+WW-B---W
+WWWBBBWW
+WWWWBBWW
+WWWBWBWW
+WWBWWWWW
+WWWWWBWW
+BWWBBWWW
+WWWWWWWW
+turn: white
+othello> move G1
+othello> move F1
+othello> move C1
+black passes.
+othello> move E1
+Game Over! white has won (58:6)!
+othello> newGame 8 8
+othello> hole C3:C6
+othello> hole F3:F6
+othello> print
+--------
+--------
+--#--#--
+--#WB#--
+--#BW#--
+--#--#--
+--------
+--------
+turn: black
+othello> possibleMoves
+Possible moves: D3,E6
+othello> move D3
+othello> hole A7:A7
+Error! can't add hole area. there is no game yet or the game has already started
+othello> abort
+Game Over! black has won (4:1)!
+othello> newGame 4 6
+othello> print
+----
+----
+-WB-
+-BW-
+----
+----
+turn: black
+othello> move C5
+othello> move B5
+othello> mvoe A5
+command not found
+othello> move A5
+othello> move D3
+othello> print
+----
+----
+-WWW
+-BB-
+BBB-
+----
+turn: black
+othello> possibleMoves
+Possible moves: A2,B2,C2,D2
+othello> hole A1:B3
+Error! can't add hole area. there is no game yet or the game has already started
+othello> newGame 8 8
+Error! there is already an active game
+othello> abort
+Game Over! black has won (5:3)!
+othello> newGame 8 8
+othello> possibleMoves
+Possible moves: C4,D3,E6,F5
+othello> print
+--------
+--------
+--------
+---WB---
+---BW---
+--------
+--------
+--------
+turn: black
+othello> move D6
+Move not possible.
+othello> move E6
+othello> print
+--------
+--------
+--------
+---WB---
+---BB---
+----B---
+--------
+--------
+turn: white
+othello> x
+command not found
+othello> possibleMoves
+Possible moves: D6,F4,F6
+othello> move D6
+othello> abort
+Game has ended in a draw.
+othello> move A1
+Error! game not started
+othello> hole A3:A6
+Error! can't add hole area. there is no game yet or the game has already started
+othello> hole A-
+Error! can't add hole area. there is no game yet or the game has already started
+othello> newGame 8 8 WW-B--##,WWB----#,WWB-B-BW,WWBBBBBB,WWBWBWB-,WWWWWBBB,BWWBBWWW,WWWWWWWW
+black passes.
+othello> print
+WW-B--##
+WWB----#
+WWB-B-BW
+WWBBBBBB
+WWBWBWB-
+WWWWWBBB
+BWWBBWWW
+WWWWWWWW
+turn: white
+othello> hole D2:D2
+othello> print
+WW-B--##
+WWB#---#
+WWB-B-BW
+WWBBBBBB
+WWBWBWB-
+WWWWWBBB
+BWWBBWWW
+WWWWWWWW
+turn: white
+othello> possibleMoves
+Possible moves: C1,D3,E2,F2,F3,G2,H5
+othello> abort
+Game Over! white has won (31:20)!
+othello> newGame 10 10 10
+Error! invalid data
+othello> newGame 10 10
+othello> print
+----------
+----------
+----------
+----------
+----WB----
+----BW----
+----------
+----------
+----------
+----------
+turn: black
+othello> hole D2:D2
+othello> hole D:D
+Error! invalid position
+othello> hole :
+Error! invalid hole
+othello> hlo D2:D2222
+command not found
+othello> hole D2:D222
+Error! invalid position
+othello> hole A6:D-8
+Error! invalid position
+othello> hole B2:A1
+Error! second position must be greater than the first one
+othello> abort
+Game has ended in a draw.
+othello> newGame 30 100
+Error! invalid width
+othello> newGame a b
+Error! invalid number
+othello> newGame -5 -10
+Error! invalid width
+othello> print
+Error! game not started
+othello> newGame 8 8
+othello> move F5
+othello> move D6
+othello> move C5
+othello> print
+--------
+--------
+--------
+---WB---
+--BBBB--
+---W----
+--------
+--------
+turn: white
+othello> possibleMoves
+Possible moves: B4,B6,F4,F6
+othello> move F4
+othello> print
+--------
+--------
+--------
+---WWW--
+--BBWB--
+---W----
+--------
+--------
+turn: black
+othello> possibleMoves
+Possible moves: D3,D7,E3,E7,F3
+othello> move F3
+othello> print
+--------
+--------
+-----B--
+---WBB--
+--BBWB--
+---W----
+--------
+--------
+turn: white
+othello> possibleMoves
+Possible moves: B4,B5,B6,E3,G3,G4,G5
+othello> abort
+Game Over! black has won (6:3)!
+othello> newGame 6 6 WWWWWW,BWBWBW,WWWWWW,BW-#WB,WWWWW-,BWBWBW
+othello> print
+WWWWWW
+BWBWBW
+WWWWWW
+BW-#WB
+WWWWW-
+BWBWBW
+turn: black
+othello> possibleMoves
+Possible moves: C4,F5
+othello> move C4
+othello> print
+WWWWWW
+BWBWBW
+WBBBWW
+BBB#WB
+WBBBW-
+BWBWBW
+turn: white
+othello> move F5
+Game Over! white has won (20:15)!
+othello> abort
+Error! game not started
+othello> quit
